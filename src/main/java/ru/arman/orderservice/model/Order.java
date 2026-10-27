@@ -32,10 +32,10 @@ public class Order {
     private OrderStatus status;
 
     @Column(name = "created_at")
-    private LocalDateTime cratedAt;
+    private LocalDateTime createdAt;
 
     @PrePersist
     protected void onCreate(){
-        cratedAt = LocalDateTime.now();
+        createdAt = LocalDateTime.now();
     }
 }
